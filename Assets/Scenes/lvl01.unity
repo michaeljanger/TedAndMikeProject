@@ -6383,10 +6383,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f1942a3bc6903245882f26c906ee40f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameobject: {fileID: 0}
-  innerplayer: {fileID: 0}
-  rigidbody: {fileID: 0}
-  gameobjecttrans: {fileID: 0}
+  gameobject: {fileID: 568959728}
+  innerplayer: {fileID: 1985166868}
+  rigidbody: {fileID: 568959730}
+  gameobjecttrans: {fileID: 568959734}
   sidewaysforce: 20
   verticalforce: 20
   jump: 0
