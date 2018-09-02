@@ -8,21 +8,23 @@ public class PlayMovement : MonoBehaviour
     public GameObject gameobject;
 	public GameObject innerplayer;
     public Rigidbody rigidbody;
+    public GameObject Camera;
     public Transform gameobjecttrans;
     public static float sidewaysforce = 20f;
     public static float verticalforce = 20f;
     public bool jump;
+
 
     // Use this for initialization
     void Start()
         {
         gameobjecttrans = gameobject.transform;
         rigidbody = gameobject.GetComponent<Rigidbody>();
-        jump = true; 
-        
-    
+        jump = true;
+      
 
-        }
+
+    }
 
     // Update is called once per frame
     void FixedUpdate()
@@ -33,7 +35,7 @@ public class PlayMovement : MonoBehaviour
             {
             Debug.Log("W");
 
-             rigidbody.AddForce(Vector3.forward * verticalforce);
+             rigidbody.AddForce(Camera.transform.forward * verticalforce);
        
 
 
@@ -41,21 +43,21 @@ public class PlayMovement : MonoBehaviour
         if (Input.GetKey("s"))
             {
             Debug.Log("S");
-            rigidbody.AddForce(Vector3.back*verticalforce);
+            rigidbody.AddForce((Camera.transform.forward*-1)*verticalforce);
     
 
             }
         if (Input.GetKey("a"))
             {
             Debug.Log("A");
-            rigidbody.AddForce(Vector3.left*sidewaysforce);
+            rigidbody.AddForce((Camera.transform.right*-1)*sidewaysforce);
     
 
             }
         if (Input.GetKey("d"))
             {
             Debug.Log("D");
-            rigidbody.AddForce(Vector3.right * sidewaysforce);
+            rigidbody.AddForce(Camera.transform.right * sidewaysforce);
 
 
             }
@@ -91,6 +93,7 @@ public class PlayMovement : MonoBehaviour
 
 
 		}
+       
         if (gameObject.transform.position.y < 5)
 
             {
