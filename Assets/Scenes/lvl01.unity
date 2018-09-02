@@ -1578,7 +1578,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameCamera: {fileID: 131145615}
   Player: {fileID: 568959728}
-  offset: {x: 0, y: 5, z: 15}
+  turnSpeed: 4
+  player: {fileID: 568959735}
+  offset: {x: 0, y: 0, z: 0}
+  offsetZ: {x: 0, y: 0, z: -4}
 --- !u!1 &157389338
 GameObject:
   m_ObjectHideFlags: 0
@@ -6583,6 +6586,11 @@ MeshFilter:
 --- !u!1 &568959728 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1303800046408962, guid: 0ef1913062e794a4eb7925a4fc206964,
+    type: 2}
+  m_PrefabInternal: {fileID: 1353561280}
+--- !u!4 &568959735 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4350859173295604, guid: 0ef1913062e794a4eb7925a4fc206964,
     type: 2}
   m_PrefabInternal: {fileID: 1353561280}
 --- !u!1 &570125747
