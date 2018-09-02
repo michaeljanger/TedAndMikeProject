@@ -9,8 +9,8 @@ public class PlayMovement : MonoBehaviour
 	public GameObject innerplayer;
     public Rigidbody rigidbody;
     public Transform gameobjecttrans;
-    public float sidewaysforce = 20f;
-    public float verticalforce = 20f;
+    public static float sidewaysforce = 20f;
+    public static float verticalforce = 20f;
     public bool jump;
 
     // Use this for initialization
@@ -27,7 +27,7 @@ public class PlayMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
         {
-
+		
 
         if (Input.GetKey("w"))
             {

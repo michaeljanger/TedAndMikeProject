@@ -28,8 +28,9 @@ public class stick : MonoBehaviour {
             transform.parent = other.transform; //parent object to player
 			other.transform.localScale += new Vector3(1F, 1f, 1f); //make player object grow
 			PlayMovement movement = other.gameObject.GetComponent<PlayMovement>(); //grab the Playmovement script and put it into definition name
-			movement.verticalforce += 1f; //make the player faster vertical when growing
-			movement.sidewaysforce += 1f; //make the player faster sideways when growing
+			PlayMovement.verticalforce += 1f; //make the player faster vertical when growing
+			PlayMovement.sidewaysforce += 1f; //make the player faster sideways when growing
+			StatsManager.objectcounter += 1;
 			Debug.Log("Growing!");
             sticking = true;
         
