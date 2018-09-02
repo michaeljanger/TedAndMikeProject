@@ -79,6 +79,18 @@ public class PlayMovement : MonoBehaviour
 
 
 		}
+		if (Input.GetKey("q"))
+		{
+
+			Debug.Log("SHRINKING");
+			if(innerplayer.transform.localScale.x<gameobject.transform.localScale.x) //if inner player is smaller than player on x axis? (TBD)
+			{
+				innerplayer.transform.position = transform.position;
+				innerplayer.transform.localScale -= new Vector3(0.001F, 0.001f, 0.001f); //make player object grow
+			}
+
+
+		}
         if (gameObject.transform.position.y < 10)
 
             {
