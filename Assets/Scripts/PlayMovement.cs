@@ -63,7 +63,7 @@ public class PlayMovement : MonoBehaviour
             {
 
             Debug.Log("JUMP");
-            rigidbody.AddForce(Vector3.up * (verticalforce * 2));
+            rigidbody.AddForce(Vector3.up * (verticalforce * 5));
   
 
             }
@@ -91,7 +91,7 @@ public class PlayMovement : MonoBehaviour
 
 
 		}
-        if (gameObject.transform.position.y < 10)
+        if (gameObject.transform.position.y < 5)
 
             {
             jump = true;

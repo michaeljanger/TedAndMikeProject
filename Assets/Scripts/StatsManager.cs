@@ -27,7 +27,7 @@ public class StatsManager : MonoBehaviour {
 		sizecounter = 0;
 		objectcounter = 0;
 		speedcounter = 0;
-		timecounter = 10;
+		timecounter = 260;
 		objectivecounter = 100;
 		win = false;
 		lost = false;
