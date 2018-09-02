@@ -28,7 +28,7 @@ public class StatsManager : MonoBehaviour {
 		objectcounter = 0;
 		speedcounter = 0;
 		timecounter = 260;
-		objectivecounter = 100;
+		objectivecounter = 1000;
 		win = false;
 		lost = false;
 		gamestatepanel.CrossFadeAlpha(0f, 0f, false);
