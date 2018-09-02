@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class StatsManager : MonoBehaviour {
-	public static float sizecounter;
+	public static float sizecounter; 
 	public static float objectcounter;
 	public static float speedcounter;
 	public static float timecounter;
